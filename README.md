@@ -15,3 +15,5 @@ BACKUP_SERVER.bat will generate a folder for you named "SERVER_BACKUPS" if its n
 How to Restore a Backup:
 ------------------------
 Replace your "world" folder with one of the folders in SERVER_BACKUPS
+
+For a More In-Depth Tutorial with Screenshots, visit here: https://www.shygirlgamer.com/2021/05/16/minecraft-backup-run-server/

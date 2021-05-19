@@ -19,7 +19,7 @@ How to Use:
 **BACKUP_SERVER.bat** by default will generate a folder for you named "SERVER_BACKUPS" if its not already there and save a backup of your server's "world" folder according to the date and time it was saved at. Simple double-click on it to use. You can click this file each time you want to save the state of your server.
 
 Backups are saved with the filename ex. world_2021-05-19_2-02-38  
-world_YYYY-MM-DD_Hour-Minute_Second  
+world_YYYY-MM-DD_Hour-Minute-Second  
 
 You also have the ability to specify your own backup folder. Simply:
 - create your backup folder

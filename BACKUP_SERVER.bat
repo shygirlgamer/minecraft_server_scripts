@@ -83,11 +83,10 @@ if defined NEW_FOLDER (
 echo.
 echo backing up to folder...
 set DATE=%BACKUP_FOLDER%\world_%date:/=%
-pause
 set WORLD=%DIR_NAME%\world
 set TIME=%time: =%
 set DATETIME=%DATE%_%TIME::=-%
-set INPUT_TO=%DATETIME:~0,-6%
+set INPUT_TO=%DATETIME:~0,-3%
 echo .
 echo backing up with filename: %INPUT_TO%
 if exist %WORLD% (

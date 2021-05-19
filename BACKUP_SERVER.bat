@@ -48,11 +48,11 @@ echo Please enter the full path to your preferred folder
 set /p NEW_FOLDER=Make sure not to add any extra spaces:
 if exist %NEW_FOLDER% (
  echo .
-echo ***********************************************************************
+ echo ***********************************************************************
  echo Saving Preferred Folder Path Setting to 
  echo %DIR_NAME%\backup_server_settings.txt
  echo NOTE: you can modify this txt file to update your path as well for next time
-echo ***********************************************************************
+ echo ***********************************************************************
  echo .
  echo %NEW_FOLDER%>backup_server_settings.txt
  echo New backup folder is set to %NEW_FOLDER%
@@ -66,9 +66,18 @@ if defined NEW_FOLDER (
  set BACKUP_FOLDER=%NEW_FOLDER%
 ) else (
  if defined STORED_FILE (
-  set BACKUP_FOLDER=%STORED_FILE%
+   set BACKUP_FOLDER=%STORED_FILE%
  ) else (
-  set BACKUP_FOLDER=%DEFAULT_FOLDER%
+   set BACKUP_FOLDER=%DEFAULT_FOLDER%
+   echo .
+   echo ***********************************************************************
+   echo Saving Preferred Folder Path Setting to 
+   echo %DIR_NAME%\backup_server_settings.txt
+   echo NOTE: you can modify this txt file to update your path as well for next time
+   echo ***********************************************************************
+   echo .
+   echo %DEFAULT_FOLDER%>backup_server_settings.txt
+   echo New backup folder is set to %DEFAULT_FOLDER%
  )
 )
 echo.

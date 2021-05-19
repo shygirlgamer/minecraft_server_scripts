@@ -1,5 +1,9 @@
 Thank you for downloading!
 
+A file to run your server and
+Another file to back up your server
+Just double click and go!
+
 Only compatible with Windows.
 
 Setup:
